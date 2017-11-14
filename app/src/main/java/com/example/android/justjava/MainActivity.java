@@ -18,7 +18,8 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
-    int quantity = 1;
+    int quantity = 0;
+    int price = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,31 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        displayPrice (quantity * 5);
+        displayPrice (quantity * price);
+    }
+
+    /**
+     * This method is called when the Espresso button is clicked.
+     */
+    public void espresso(View view) {
+        price = 3;
+        display (quantity);
+    }
+
+    /**
+     * This method is called when the Americano button is clicked.
+     */
+    public void americano(View view) {
+        price = 5;
+        display (quantity);
+    }
+
+    /**
+     * This method is called when the Cappuccino button is clicked.
+     */
+    public void cappuccino(View view) {
+        price = 7;
+        display (quantity);
     }
 
     /**
