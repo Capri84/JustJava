@@ -1,14 +1,10 @@
 <resources>
-    <string name="app_name">Just Java</string>
+    <string name="app_name">CoffeeApp</string>
     <string name="quantity">Quantity:</string>
     <string name="amount">0</string>
     <string name="order">Order</string>
-    <string name="price">Price:</string>
-    <string name="total">0</string>
+    <string name="price">Price</string>
+    <string name="total">$10</string>
     <string name="increment">+</string>
     <string name="decrement">-</string>
-    <string name="espresso">Espresso($3)</string>
-    <string name="americano">Americano($5)</string>
-    <string name="cappuccino">Cappuccino($7)</string>
-    <string name="choise">Choose your coffee:</string>
 </resources>
