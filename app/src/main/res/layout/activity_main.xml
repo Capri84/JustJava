@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.justjava.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.justjava.MainActivity">
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/paddingBottom"
+        android:paddingTop="@dimen/paddingTop"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:hint="@string/name"
+        android:inputType="textCapWords"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/paddingBottom"
         android:paddingLeft="@dimen/paddingLeft"
         android:paddingTop="@dimen/paddingTop"
+        android:text="@string/toppings"
+        android:textAllCaps="true" />
+
+    <CheckBox
+        android:id="@+id/whipped_cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whippedCream"
+        style="@style/black16sp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:paddingLeft="@dimen/paddingLeft2"/>
+
+    <CheckBox
+        android:id="@+id/chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate"
+        style="@style/black16sp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:paddingLeft="@dimen/paddingLeft2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:paddingBottom="@dimen/paddingBottom"
-        android:text="@string/quantity"
+        android:paddingLeft="@dimen/paddingLeft"
+        android:paddingTop="@dimen/paddingTop"
+        android:text="@string/quantity1"
         android:textAllCaps="true" />
 
     <LinearLayout
@@ -43,23 +86,6 @@
             android:text="@string/increment" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/paddingLeft"
-        android:paddingTop="@dimen/paddingTop"
-        android:text="@string/price"
-        android:textAllCaps="true" />
-
-    <TextView
-        android:id="@+id/price_text_view"
-        style="@style/black16sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/paddingLeft"
-        android:paddingTop="@dimen/paddingTop"
-        android:text="@string/total" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,3 +95,4 @@
         android:text="@string/order"
         android:textAllCaps="true" />
 </LinearLayout>
+</ScrollView>
